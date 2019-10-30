@@ -13,6 +13,5 @@ class OpenCLManager {
   OpenCLManager();
   ~OpenCLManager();
   int InitializeContext();
-  static void PrintClProgramBuildFailure(cl_int ret, cl_program program,
-                                         cl_device_id device_id);
+  static std::string OpenCLManager::GetCLErrorString(cl_int error);
 };
