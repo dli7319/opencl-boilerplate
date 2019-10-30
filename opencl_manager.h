@@ -13,5 +13,5 @@ class OpenCLManager {
   OpenCLManager();
   ~OpenCLManager();
   int InitializeContext();
-  static std::string OpenCLManager::GetCLErrorString(cl_int error);
+  static std::string GetCLErrorString(cl_int error);
 };
