@@ -11,7 +11,7 @@ to automatically find an OpenCL platform, device, and context.
 OpenCLManager cl_manager;
 cl_manager.InitializeContext();
 
-# Now you can access
+// Now you can access
 cl_manager.platform;
 cl_manager.device;
 cl_manager.context;
