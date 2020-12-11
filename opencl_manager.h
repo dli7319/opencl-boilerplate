@@ -4,12 +4,15 @@
 #include <iostream>
 
 class OpenCLManager {
- private:
- public:
+private:
+public:
   cl::Platform platform;
   cl::Device device;
   cl::Context context;
   cl::CommandQueue command_queue;
+  std::vector<cl_context_properties> context_properties{0};
+  cl_context_properties gl_context = -1;
+  cl_context_properties gl_display = -1;
   OpenCLManager();
   ~OpenCLManager();
   int InitializeContext();
