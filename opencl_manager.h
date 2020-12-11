@@ -1,6 +1,7 @@
 #pragma once
 
 #include <CL/cl.hpp>
+#include <CL/cl_gl.h>
 #include <iostream>
 
 class OpenCLManager {
